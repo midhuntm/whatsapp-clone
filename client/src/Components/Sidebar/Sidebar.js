@@ -59,7 +59,7 @@ export default function Sidebar() {
               <div className='sidebar_chats'>   
              {
               rooms.filter((item) => {
-                return filtered.toLowerCase() === '' ? item : item. .toLowerCase().includes(filtered)
+                return filtered.toLowerCase() === '' ? item : item?.toLowerCase().includes(filtered)
               }).
               map((room) => (
                 <SidebarChat key={room._id} id={room._id} name={room.name}/>
